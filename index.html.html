@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unit Kearsipan BBPMP Provinsi Jawa Timur</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; padding: 0; background: #f7f7f7; }
+    header { background: #0d47a1; color: white; padding: 20px; text-align: center; }
+    nav { background: #1976d2; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    main { padding: 20px; }
+    table { border-collapse: collapse; width: 100%; background: white; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 10px; text-align: left; }
+    form input, form textarea, form button { display: block; margin: 10px 0; padding: 8px; width: 100%; max-width: 500px; }
+    section { margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Unit Kearsipan BBPMP Provinsi Jawa Timur</h1>
+    <p>Portal Informasi Pengelolaan Arsip</p>
+  </header>
+  <nav>
+    <a href="#arsip">Daftar Arsip</a>
+    <a href="#pos">POS & SOP</a>
+    <a href="#template">Template Surat</a>
+    <a href="#form">Form Peminjaman</a>
+  </nav>
+  <main>
+    <section id="arsip">
+      <h2>📁 Daftar Arsip</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Judul Arsip</th>
+            <th>Kode</th>
+            <th>Tahun</th>
+            <th>Jenis</th>
+            <th>Unit</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dokumen Rencana Kerja</td>
+            <td>RK-001</td>
+            <td>2024</td>
+            <td>Aktif</td>
+            <td>Perencanaan</td>
+            <td>-</td>
+          </tr>
+          <!-- Tambah baris lain di sini -->
+        </tbody>
+      </table>
+    </section>
+
+    <section id="pos">
+      <h2>📌 POS & SOP</h2>
+      <ul>
+        <li><a href="dokumen/POS Pengelolaan Arsip Aktif.pdf" download>POS Peminjaman Arsip (PDF)</a></li>
+        <li><a href="dokumen/POS Pemindahan Arsip.pdf" download>POS Pengelolaan Arsip (PDF)</a></li>
+	<li><a href="dokumen/POS Penataan Arsip Kacau.pdf" download>POS Penataan Arsip Kacau (PDF)</a></li>
+        <li><a href="dokumen/POS Pemusnahan Arsip.pdf" download>POS Pemusnahan Arsip (PDF)</a></li>
+        <li><a href="dokumen/POS Pemindahan Arsip.pdf" download>POS Pengelolaan Arsip (PDF)</a></li>
+      </ul>
+    </section>
+
+    <section id="template">
+      <h2>📄 Template Surat</h2>
+      <ul>
+        <li><a href="dokumen/Template_Surat_Tugas.docx" download>Template Surat Tugas</a></li>
+        <li><a href="dokumen/Template_Surat_Keterangan.docx" download>Template Surat Keterangan</a></li>
+      </ul>
+    </section>
+
+    <section id="form">
+      <h2>📝 Form Peminjaman Arsip</h2>
+      <form onsubmit="alert('Data peminjaman disimpan secara lokal.'); return false;">
+        <label>Nama Peminjam:</label>
+        <input type="text" required />
+
+        <label>Unit Kerja:</label>
+        <input type="text" required />
+
+        <label>Judul Arsip yang Dipinjam:</label>
+        <input type="text" required />
+
+        <label>Tanggal Peminjaman:</label>
+        <input type="date" required />
+
+        <label>Keperluan:</label>
+        <textarea rows="3"></textarea>
+
+        <button type="submit">Kirim</button>
+      </form>
+      <p><em>*Data ini tidak tersimpan secara permanen. Untuk versi lengkap, hubungi pengelola arsip.</em></p>
+    </section>
+  </main>
+</body>
+</html>
